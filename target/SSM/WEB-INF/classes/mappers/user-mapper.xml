@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ly.dao.UserDao">
+    <resultMap id="userResultMap" type="User">
+        <id property="userId" column="id"/>
+        <result property="userName" column="user_name"/>
+        <result property="password" column="password"/>
+    </resultMap>
+    <select id="getUserAll" resultMap="userResultMap">
+        SELECT id, user_name,password FROM yjf.user;
+    </select>
+</mapper>
