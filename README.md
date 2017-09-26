@@ -1,0 +1,3 @@
+# SSM
+基于Spring+SpringMVC+Mybatis的开发框架，并且集成了Shiro安全验证以及Quartz job等功能
+在接下来的时间里还将为这个框架添加其他的功能，并且利用这个框架实现一个项目
